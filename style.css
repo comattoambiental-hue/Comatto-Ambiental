@@ -106,7 +106,7 @@
   min-height:700px;
   display:flex;
   align-items:center;
-  background:url('hero.webp') left center/cover no-repeat;
+  background:url('hero.webp.png') left center/cover no-repeat;
 }
 
 .hero-shade{
