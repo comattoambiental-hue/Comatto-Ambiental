@@ -11,3 +11,17 @@
 .floating{position:fixed;right:20px;bottom:20px;z-index:60;background:#25d366;color:#fff;font-weight:900;padding:14px 19px;border-radius:999px;box-shadow:0 12px 28px rgba(0,0,0,.2)}footer{background:#061f14;color:#c9d5ce;padding:24px 0}.footer-content{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:.92rem}
 @media(max-width:900px){.nav nav{display:none}.cards{grid-template-columns:repeat(2,1fr)}.about-grid,.contact-grid{grid-template-columns:1fr}.trust-grid{grid-template-columns:1fr}.trust article{border-right:0;border-bottom:1px solid rgba(255,255,255,.14)}.hero{background-position:60% center}.hero-shade{background:rgba(5,33,20,.76)}}
 @media(max-width:600px){.brand img{width:165px}.btn-small{display:none}.cards{grid-template-columns:1fr}.section{padding:68px 0}.hero{min-height:650px}.hero h1{font-size:2.65rem}.hero p{font-size:1rem}.actions .btn{width:100%}.floating{right:14px;bottom:14px}}
+.about-photo{
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+  min-height:420px;
+}
+
+.about-photo img{
+  width:100%;
+  max-width:380px;
+  height:auto;
+  display:block;
+  object-fit:contain;
+}
