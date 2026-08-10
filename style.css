@@ -98,3 +98,75 @@
     max-width:330px;
   }
 }
+
+/* NOVA CAPA - TEXTO DO LADO DIREITO */
+
+.hero{
+  position:relative;
+  min-height:700px;
+  display:flex;
+  align-items:center;
+  background:url('hero.webp') left center/cover no-repeat;
+}
+
+.hero-shade{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    90deg,
+    rgba(5,33,20,0) 0%,
+    rgba(5,33,20,.08) 35%,
+    rgba(5,33,20,.65) 58%,
+    rgba(5,33,20,.94) 100%
+  );
+}
+
+.hero-grid{
+  position:relative;
+  width:min(1500px, calc(100% - 80px));
+  margin:auto;
+  display:flex;
+  justify-content:flex-end;
+}
+
+.hero-copy{
+  width:48%;
+  max-width:700px;
+  color:#fff;
+  padding:80px 0;
+}
+
+.hero-copy h1{
+  font-size:clamp(3rem,5vw,5.3rem);
+  line-height:1.02;
+}
+
+.hero-copy p{
+  max-width:620px;
+}
+
+
+/* NOVA CAPA - CELULAR */
+@media(max-width:900px){
+
+  .hero{
+    min-height:650px;
+    background-position:center;
+  }
+
+  .hero-shade{
+    background:rgba(5,33,20,.68);
+  }
+
+  .hero-grid{
+    width:92%;
+    justify-content:flex-start;
+  }
+
+  .hero-copy{
+    width:100%;
+    max-width:620px;
+    padding:70px 0;
+  }
+
+}
